@@ -312,5 +312,9 @@ span.legend-icon {
   display: block;
 }
 .leaflet-container {
-	font: 12px/1.5 "Source Sans Pro", sans-serif !important;
-	}
+  font: 12px/1.5 "Source Sans Pro", sans-serif !important;
+}
+.leaflet-popup-content {
+  min-width: 250px;
+}
+
