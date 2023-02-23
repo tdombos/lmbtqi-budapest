@@ -157,7 +157,7 @@ $(window).on('load', function() {
 
         for (i in layers) {
           multilayerClusterSupport.checkIn(layers[i]);
-          layers[i].addTo(map);
+          //layers[i].addTo(map);
         }
       }
 
@@ -170,7 +170,7 @@ $(window).on('load', function() {
                 position: pos,
             });
             for (i in layers) {
-                //pointsLegend.addOverlay(layers[i], i);
+                pointsLegend.addOverlay(layers[i], i);
             }
 
       if (getSetting('_pointsLegendPos') !== 'off') {
