@@ -170,7 +170,7 @@ $(window).on('load', function() {
                 position: pos,
             });
             for (i in layers) {
-                pointsLegend.addOverlay(i, layers[i]);
+                pointsLegend.addOverlay(layers[i], i);
             }
 
       if (getSetting('_pointsLegendPos') !== 'off') {
