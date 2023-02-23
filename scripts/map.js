@@ -165,10 +165,13 @@ $(window).on('load', function() {
         ? 'topleft'
         : getSetting('_pointsLegendPos');
 
-      var pointsLegend = L.control.layers(null, layers, {
-        collapsed: false,
-        position: pos,
-      });
+       var pointsLegend = L.control.layers(null, null, {
+                collapsed: false,
+                position: pos,
+            });
+            for (i in layers) {
+                pointsLegend.addOverlay(i, layers[i]);
+            }
 
       if (getSetting('_pointsLegendPos') !== 'off') {
         pointsLegend.addTo(map);
